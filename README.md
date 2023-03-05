@@ -17,7 +17,7 @@ In order to deposit ERC223 token and make the contract recognize the value a use
 ## Transactions
 
 
-```JSON
+```
 [vm]from: 0x5B3...eddC4to: ERC20.approve(address,uint256) 0xd91...39138value: 0 weidata: 0x095...003e7logs: 1hash: 0x762...61e84
 status	true Transaction mined and execution succeed
 transaction hash	0x762164fba578d015e9de30dedce43ceaabf10d46687f4f26fef5880589361e84
