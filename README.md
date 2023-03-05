@@ -111,3 +111,49 @@ val	0 wei
 ```
 
 
+### ERC223: transfer to TestDeposit address - 54863 gas
+
+```
+[vm]from: 0x5B3...eddC4to: ERC223Token.transfer(address,uint256) 0xf8e...9fBe8value: 0 weidata: 0xa90...003e7logs: 2hash: 0xd19...d3244
+status	true Transaction mined and execution succeed
+transaction hash	0xd1971763e5e128a7f61fd9c0b3f60d34b13034682bfef4264a3f6bff73ed3244
+from	0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+to	ERC223Token.transfer(address,uint256) 0xf8e81D47203A594245E36C48e151709F0C19fBe8
+gas	74133 gas
+transaction cost	54863 gas 
+execution cost	38079 gas 
+input	0xa90...003e7
+decoded input	{
+	"address _to": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+	"uint256 _value": "999"
+}
+decoded output	{
+	"0": "bool: success true"
+}
+logs	[
+	{
+		"from": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+		"topic": "0x4d6ce1e535dbade1c23defba91e23b8f791ce5edc0cc320257a2b364e4e38426",
+		"event": "Deposit",
+		"args": {
+			"0": "999"
+		}
+	},
+	{
+		"from": "0xf8e81D47203A594245E36C48e151709F0C19fBe8",
+		"topic": "0xe19260aff97b920c7df27010903aeb9c8d2be5d310a2c67824cf3f15396e4c16",
+		"event": "Transfer",
+		"args": {
+			"0": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+			"1": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+			"2": "999",
+			"3": "0x00000000",
+			"from": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+			"to": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+			"value": "999",
+			"data": "0x00000000"
+		}
+	}
+]
+val	0 wei
+```
