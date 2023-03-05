@@ -53,9 +53,8 @@ logs	[
 val	0 wei
 ```
 
-![REMIX_erc20_approval](https://user-images.githubusercontent.com/26142412/222992971-be825794-6a34-4a8b-83ad-d2e72ec23818.png)
 
-### ERC20: deposit (which calls transferFrom under the hood) - 
+### ERC20: deposit (which calls transferFrom under the hood) - 75737 gas
 
 ```
 [vm]from: 0x5B3...eddC4to: TestDeposit.ERC20deposit(address,uint256) 0xd8b...33fa8value: 0 weidata: 0xae5...003e7logs: 3hash: 0x96f...d0195
