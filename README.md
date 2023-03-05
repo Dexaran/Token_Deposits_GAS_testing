@@ -16,6 +16,7 @@ In order to deposit ERC223 token and make the contract recognize the value a use
 
 ## Transactions
 
+### ERC20: approval - 46212 gas
 
 ```
 [vm]from: 0x5B3...eddC4to: ERC20.approve(address,uint256) 0xd91...39138value: 0 weidata: 0x095...003e7logs: 1hash: 0x762...61e84
@@ -51,3 +52,5 @@ logs	[
 ]
 val	0 wei
 ```
+
+![REMIX_erc20_approval](https://user-images.githubusercontent.com/26142412/222992971-be825794-6a34-4a8b-83ad-d2e72ec23818.png)
