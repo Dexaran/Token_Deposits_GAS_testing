@@ -54,3 +54,61 @@ val	0 wei
 ```
 
 ![REMIX_erc20_approval](https://user-images.githubusercontent.com/26142412/222992971-be825794-6a34-4a8b-83ad-d2e72ec23818.png)
+
+### ERC20: deposit (which calls transferFrom under the hood) - 
+
+```
+[vm]from: 0x5B3...eddC4to: TestDeposit.ERC20deposit(address,uint256) 0xd8b...33fa8value: 0 weidata: 0xae5...003e7logs: 3hash: 0x96f...d0195
+status	true Transaction mined and execution succeed
+transaction hash	0x96f728adbc69cde293b9ca10f9c9e4934e48c6c555e87e5a15e0f10fd16d0195
+from	0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+to	TestDeposit.ERC20deposit(address,uint256) 0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8
+gas	109178 gas
+transaction cost	75737 gas 
+execution cost	63753 gas 
+input	0xae5...003e7
+decoded input	{
+	"address token": "0xd9145CCE52D386f254917e481eB44e9943F39138",
+	"uint256 value": "999"
+}
+decoded output	{}
+logs	[
+	{
+		"from": "0xd9145CCE52D386f254917e481eB44e9943F39138",
+		"topic": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+		"event": "Approval",
+		"args": {
+			"0": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+			"1": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+			"2": "0",
+			"owner": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+			"spender": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+			"value": "0"
+		}
+	},
+	{
+		"from": "0xd9145CCE52D386f254917e481eB44e9943F39138",
+		"topic": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+		"event": "Transfer",
+		"args": {
+			"0": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+			"1": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+			"2": "999",
+			"from": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+			"to": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+			"value": "999"
+		}
+	},
+	{
+		"from": "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8",
+		"topic": "0x4d6ce1e535dbade1c23defba91e23b8f791ce5edc0cc320257a2b364e4e38426",
+		"event": "Deposit",
+		"args": {
+			"0": "999"
+		}
+	}
+]
+val	0 wei
+```
+
+
